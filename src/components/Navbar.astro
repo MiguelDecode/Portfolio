@@ -1,0 +1,67 @@
+---
+import Logo from "./Logo.astro";
+import MainNav from "./MainNav.astro";
+import SecondaryNav from "./SecondaryNav.astro";
+---
+
+<header
+  id="main-header"
+  class="py-3 px-9 fixed top-0 left-0 w-full text-slate-900 dark:text-slate-100 z-30"
+>
+  <div
+    id="navbar"
+    class="max-w-[1440px] flex justify-between items-center w-full mx-auto"
+  >
+    <Logo />
+
+    <MainNav />
+
+    <SecondaryNav />
+
+    <svg
+      id="open-menu"
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-8 h-8 stroke-black dark:stroke-white md:hidden"
+      viewBox="0 0 22 22"
+      stroke-width="1.5"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M4 6l16 0"></path>
+      <path d="M4 12l16 0"></path>
+      <path d="M4 18l16 0"></path>
+    </svg>
+  </div>
+
+  <div
+    id="menu-backdrop"
+    class="absolute border-[3px] border-slate-900 dark:border-slate-100  backdrop-blur rounded left-[var(--left-backdrop)] top-[var(--top-backdrop)] w-[var(--width-backdrop)] h-[var(--height-backdrop)] transition-all duration-300 ease-in-out opacity-0 -z-10"
+  >
+  </div>
+</header>
+
+<script>
+  // Backdrop Effect
+  const listItem = document.querySelectorAll("#main-header li");
+  const menuBackdrop = document.getElementById("menu-backdrop");
+
+  listItem.forEach((item) => {
+    item.addEventListener("mouseenter", (event) => {
+      const { left, top, width, height } = item.getBoundingClientRect();
+
+      menuBackdrop.style.setProperty("--left-backdrop", `${left}px`);
+      menuBackdrop.style.setProperty("--top-backdrop", `${top}px`);
+      menuBackdrop.style.setProperty("--width-backdrop", `${width}px`);
+      menuBackdrop.style.setProperty("--height-backdrop", `${height}px`);
+      menuBackdrop.style.opacity = "1";
+      menuBackdrop.style.visibility = "visible";
+    });
+
+    item.addEventListener("mouseleave", () => {
+      menuBackdrop.style.opacity = "0";
+      menuBackdrop.style.visibility = "hidden";
+    });
+  });
+</script>

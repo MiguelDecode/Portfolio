@@ -1,0 +1,122 @@
+<nav id="secondary-nav" class="hidden md:flex flex-grow basis-0 justify-end">
+  <ul
+    class="flex items-center [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+  >
+    <li class="leading-none">
+      <a
+        href="https://github.com/MiguelDecode"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center justify-center leading-none"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6 stroke-black dark:stroke-current"
+          stroke-width="1.5"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+          ></path>
+        </svg>
+      </a>
+    </li>
+
+    <li class="leading-none">
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6 stroke-black dark:stroke-current"
+          stroke-width="1.5"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+          ></path>
+          <path d="M8 11l0 5"></path>
+          <path d="M8 8l0 .01"></path>
+          <path d="M12 16l0 -5"></path>
+          <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+        </svg>
+      </a>
+    </li>
+
+    <li>
+      <button
+        type="button"
+        id="theme-toggle"
+        aria-label="Color Mode"
+        class="inline-block px-4 py-[10px]"
+      >
+        <svg
+          id="theme-toggle-dark-icon"
+          class="w-6 h-6 hidden -rotate-90 stroke-black dark:stroke-white"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke-width="1.5"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+          ></path>
+        </svg>
+
+        <svg
+          id="theme-toggle-light-icon"
+          class="w-6 h-6 hidden stroke-black dark:stroke-white"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-sun-high"
+          stroke-width="1.5"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"
+          ></path>
+          <path d="M6.343 17.657l-1.414 1.414"></path>
+          <path d="M6.343 6.343l-1.414 -1.414"></path>
+          <path d="M17.657 6.343l1.414 -1.414"></path>
+          <path d="M17.657 17.657l1.414 1.414"></path>
+          <path d="M4 12h-2"></path>
+          <path d="M12 4v-2"></path>
+          <path d="M20 12h2"></path>
+          <path d="M12 20v2"></path>
+        </svg>
+      </button>
+    </li>
+  </ul>
+</nav>
+
+<script>
+  const themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
+  const themeToggleLightIcon = document.getElementById(
+    "theme-toggle-light-icon"
+  );
+  const themeToggleBtn = document.getElementById("theme-toggle");
+
+
+  const handleTheme = () => {
+    if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark");
+      themeToggleDarkIcon.classList.add("hidden");
+      themeToggleLightIcon.classList.remove("hidden");
+    } else {
+      document.documentElement.classList.add("dark");
+      themeToggleDarkIcon.classList.remove("hidden");
+      themeToggleLightIcon.classList.add("hidden");
+    }
+  };
+
+  themeToggleBtn.addEventListener("click", handleTheme);
+  document.addEventListener("DOMContentLoaded", handleTheme);
+</script>

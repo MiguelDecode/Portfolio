@@ -6,38 +6,38 @@ import SecondaryNav from "./SecondaryNav.astro";
 
 <header
   id="main-header"
-  class="py-3 px-9 fixed top-0 left-0 w-full text-slate-900 dark:text-slate-100 z-30"
+  class="py-3 px-9 fixed top-0 left-0 w-screen text-slate-900 dark:text-slate-100 z-30"
 >
   <div
     id="navbar"
-    class="max-w-[1440px] flex justify-between items-center w-full mx-auto"
+    class="max-w-[1440px] flex md:flex-row gap-8 md:gap-0 justify-between items-center w-full mx-auto"
   >
     <Logo />
 
     <MainNav />
 
     <SecondaryNav />
-
-    <svg
-      id="open-menu"
-      xmlns="http://www.w3.org/2000/svg"
-      class="w-8 h-8 stroke-black dark:stroke-white md:hidden"
-      viewBox="0 0 22 22"
-      stroke-width="1.5"
-      fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <path d="M4 6l16 0"></path>
-      <path d="M4 12l16 0"></path>
-      <path d="M4 18l16 0"></path>
-    </svg>
   </div>
+
+  <svg
+    id="open-menu"
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-8 h-8 absolute top-4 right-9 stroke-black dark:stroke-white md:hidden"
+    viewBox="0 0 22 22"
+    stroke-width="1.5"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M4 6l16 0"></path>
+    <path d="M4 12l16 0"></path>
+    <path d="M4 18l16 0"></path>
+  </svg>
 
   <div
     id="menu-backdrop"
-    class="absolute border-[3px] border-slate-900 dark:border-slate-100  backdrop-blur rounded left-[var(--left-backdrop)] top-[var(--top-backdrop)] w-[var(--width-backdrop)] h-[var(--height-backdrop)] transition-all duration-300 ease-in-out opacity-0 -z-10"
+    class="absolute border-[3px] border-slate-900 dark:border-slate-100 backdrop-blur rounded left-[var(--left-backdrop)] top-[var(--top-backdrop)] w-[var(--width-backdrop)] h-[var(--height-backdrop)] transition-all duration-300 ease-in-out opacity-0 -z-10"
   >
   </div>
 </header>
@@ -64,4 +64,27 @@ import SecondaryNav from "./SecondaryNav.astro";
       menuBackdrop.style.visibility = "hidden";
     });
   });
+
+  // Menu Mobile
+  const openMenuIcon = document.getElementById("open-menu");
+  const logoElement = document.getElementById("logo");
+  const navBar = document.getElementById("navbar");
+  const mainNav = document.getElementById("main-nav");
+  const secondaryNav = document.getElementById("secondary-nav");
+
+  const toggleMenu = () => {
+    mainNav.classList.toggle("hidden");
+    secondaryNav.classList.toggle("hidden");
+    navBar.classList.toggle("flex-col");
+  };
+
+  logoElement.addEventListener("click", (event) => {
+    if (event.target.matches("h1>a")) toggleMenu();
+  });
+
+  mainNav.addEventListener("click", (event) => {
+    if (event.target.matches("ul>li>a")) toggleMenu();
+  });
+
+  openMenuIcon.addEventListener("click", toggleMenu);
 </script>

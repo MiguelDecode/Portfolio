@@ -1,5 +1,32 @@
+---
+import { basics } from "@cv";
+---
+
 <section
   id="about"
+  class="pt-20 mx-auto max-w-7xl text-slate-900 dark:text-slate-100 px-4"
 >
-  <h2>About</h2>
+  <h2 class="text-6xl text-center font-bold mb-8">Sobre Mi</h2>
+  <div
+    class="flex flex-col-reverse md:flex-row gap-8 items-center justify-around"
+  >
+    <div
+      class="border-[3px] rounded border-slate-900 dark:border-slate-100 size-80 lg:size-96 rotate-6"
+    >
+      <img
+        class="h-full w-full object-cover grayscale transition-all ease-in-out duration-500 hover:grayscale-0"
+        src="/public/profile.jpg"
+        alt="Miguel Decode Photo"
+      />
+    </div>
+    <div class="md:w-1/2">
+      {
+        basics.about.map((parragraph) => (
+          <p class="text-xl leading-10 mb-6">
+            {parragraph}
+          </p>
+        ))
+      }
+    </div>
+  </div>
 </section>

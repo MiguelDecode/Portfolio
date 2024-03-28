@@ -1,0 +1,350 @@
+{
+  "basics": {
+    "name": "Miguel Decode",
+    "label": "Desarollador FrontEnd.",
+    "image": "",
+    "email": "migueldecode@gmail.com",
+    "url": "https://migueldecode.github.io/portfolio/",
+    "cv": "https://curriculum.com",
+    "title": "Hey, soy ",
+    "summary": "De Galicia, España. Amante de la sencillez y las buenas prácticas. Con ganas de participar y aprender cosas nuevas.",
+    "about": [
+      "Mi nombre real es Miguel Lema y desde que decidí a adentrarme en este mundo no paro de encontrar nuevas formas de torturarme.",
+      "Estudié automoción y, tras años de experiencia, me pasé al mundo de la Programación. Desde entonces disfruto aprendiendo algo nuevo cada día y desarollando mis propias ideas."
+    ],
+    "location": {
+      "city": "Carballo",
+      "countryCode": "España",
+      "region": "Galicia"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "migueldecode",
+        "url": "https://github.com/MiguelDecode"
+      },
+      {
+        "network": "Linkedin",
+        "username": "Miguel Lema",
+        "url": "https://www.linkedin.com/in/miguel-lema-garc%C3%ADa/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Vcar S.L.",
+      "position": "Electromecánico",
+      "url": "https://company.com",
+      "startDate": "Noviembre 2023",
+      "endDate": "Actualmente",
+      "summary": "Trabajo de electromecánico generico.",
+      "highlights": ["electricidad"]
+    },
+    {
+      "name": "Corgal Automóviles S.L.",
+      "position": "Electromecánico",
+      "url": "https://company.com",
+      "startDate": "Febrero 2017",
+      "endDate": "Noviembre 2023",
+      "summary": "Trabajo de electromecánico generico.",
+      "highlights": ["electricidad"]
+    },
+    {
+      "name": "Taller eléctrico Alonso",
+      "position": "Electromecánico",
+      "url": "https://company.com",
+      "startDate": "Septiembre 2011",
+      "endDate": "Octubre 2016",
+      "summary": "Trabajo de electromecánico generico.",
+      "highlights": ["electricidad"]
+    },
+    {
+      "name": "Ezgocar",
+      "position": "Electromecánico",
+      "url": "https://company.com",
+      "startDate": "Julio 2007",
+      "endDate": "Octubre 2010",
+      "summary": "Trabajo de electromecánico generico.",
+      "highlights": ["primer trabajo"]
+    },
+    {
+      "name": "Oza Motor S.A.",
+      "position": "Electromecánico",
+      "url": "https://company.com",
+      "startDate": "Marzo 2007",
+      "endDate": "Junio 2007",
+      "summary": "Prácticas finales del ciclo superior de automoción.",
+      "highlights": ["prácticas formación"]
+    },
+    {
+      "name": "Taller eléctrico Espasandin",
+      "position": "Contrato en prácticas",
+      "url": "https://company.com",
+      "startDate": "Julio 2006",
+      "endDate": "Septiembre 2006",
+      "summary": "Mi primera experiencia laboral realizada en verano mientras cursaba mi ciclo superior de automoción.",
+      "highlights": ["primera experiencia"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "url": "https://institution.com/",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "html",
+      "level": "Master",
+      "keywords": ["HTML", "Web Development", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "JavaScript"]
+    },
+    {
+      "name": "Figma",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Astro",
+      "level": "Avanzado",
+      "keywords": ["Desarollo Web", "JavaScript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Español",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project 1",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Won award at AIHacks 2016"],
+      "repo": "https://project.com/",
+      "live": "https://project.com/",
+      "stack": ["html", "css"]
+    },
+    {
+      "name": "Project 2",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2021-02-01",
+      "endDate": "2023-02-01",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Finalist at TechCon 2022"],
+      "repo": "https://project2.com/",
+      "live": "https://project2.com/",
+      "stack": ["react", "typescript", "tailwind", "astro"]
+    },
+    {
+      "name": "Project 3",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2020-03-15",
+      "endDate": "2022-03-15",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Featured in TechXpo 2021"],
+      "repo": "https://project3.com/",
+      "live": "https://project3.com/",
+      "stack": ["vue", "javascript", "sass", "svelte"]
+    },
+    {
+      "name": "Project 4",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2019-05-20",
+      "endDate": "2021-05-20",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Received positive feedback at DevSummit 2020"],
+      "repo": "https://project4.com/",
+      "live": "https://project4.com/",
+      "stack": ["angular", "javascript", "bootstrap", "astro", "html"]
+    },
+    {
+      "name": "Project 5",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2022-04-10",
+      "endDate": "2024-04-10",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Reached 100k downloads on Google Play Store"],
+      "repo": "https://project5.com/",
+      "live": "https://project5.com/",
+      "stack": ["nextjs", "typescript", "chakra-ui", "astro"]
+    },
+    {
+      "name": "Project 6",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2021-08-01",
+      "endDate": "2023-08-01",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Mentioned in Forbes Tech News"],
+      "repo": "https://project6.com/",
+      "live": "https://project6.com/",
+      "stack": ["ember", "javascript", "bulma", "astro"]
+    },
+    {
+      "name": "Project 7",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2022-01-05",
+      "endDate": "2024-01-05",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Winner of Startup Challenge 2023"],
+      "repo": "https://project7.com/",
+      "live": "https://project7.com/",
+      "stack": ["nuxtjs", "javascript", "tailwind", "astro"]
+    },
+    {
+      "name": "Project 8",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2021-11-20",
+      "endDate": "2023-11-20",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Covered by TechCrunch"],
+      "repo": "https://project8.com/",
+      "live": "https://project8.com/",
+      "stack": ["sapper", "typescript", "bulma", "astro"]
+    },
+    {
+      "name": "Project 9",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2022-02-15",
+      "endDate": "2024-02-15",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Invited to present at WebSummit 2023"],
+      "repo": "https://project9.com/",
+      "live": "https://project9.com/",
+      "stack": ["preact", "javascript", "tailwind", "astro"]
+    },
+    {
+      "name": "Project 10",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2020-09-10",
+      "endDate": "2022-09-10",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Reached top trending on Product Hunt"],
+      "repo": "https://project10.com/",
+      "live": "https://project10.com/",
+      "stack": ["sveltekit", "typescript", "windi-css", "astro"]
+    },
+    {
+      "name": "Project 11",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2022-06-01",
+      "endDate": "2024-06-01",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Featured in Wired Magazine"],
+      "repo": "https://project11.com/",
+      "live": "https://project11.com/",
+      "stack": ["solidjs", "javascript", "tailwind", "astro"]
+    },
+    {
+      "name": "Project 12",
+      "image": "/public/project_mock.jpg",
+      "startDate": "2021-03-25",
+      "endDate": "2023-03-25",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies, nisi sit amet porta egestas, enim mauris eleifend neque, nec maximus erat tellus non enim. Vestibulum semper risus a mi ultricies vehicula.",
+      "highlights": ["Received grant from NSF"],
+      "repo": "https://project12.com/",
+      "live": "https://project12.com/",
+      "stack": ["vue", "typescript", "bootstrap", "astro"]
+    }
+  ]
+}

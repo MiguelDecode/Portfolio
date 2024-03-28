@@ -1,0 +1,111 @@
+---
+import Html from "../icons/Html.astro";
+import Css from "../icons/Css.astro";
+import JavaScript from "../icons/JavaScript.astro";
+import TypeScript from "../icons/TypeScript.astro";
+import Tailwind from "../icons/Tailwind.astro";
+import React from "../icons/React.astro";
+import Figma from "../icons/Figma.astro";
+import AstroIcon from "../icons/AstroIcon.astro";
+
+const icon = {
+  width: "48",
+  height: "48",
+};
+---
+
+<div id="scroller" class="max-w-full md:max-w-xl mx-auto overflow-hidden">
+  <ul
+    class="text-slate-900 dark:text-slate-100 m-0 px-0 py-4 list-none flex items-center gap-8 [&>li>svg]:w-12"
+  >
+    <li>
+      <button data-tag="html">
+        <Html {...icon} />
+      </button>
+    </li>
+    <li>
+      <button data-tag="css">
+        <Css {...icon} />
+      </button>
+    </li>
+    <li>
+      <button data-tag="javascript">
+        <JavaScript {...icon} />
+      </button>
+    </li>
+    <li>
+      <button data-tag="typescript">
+        <TypeScript {...icon} />
+      </button>
+    </li>
+    <li>
+      <button data-tag="tailwind">
+        <Tailwind {...icon} />
+      </button>
+    </li>
+    <li>
+      <button data-tag="react">
+        <React {...icon} />
+      </button>
+    </li>
+    <li>
+      <button data-tag="figma">
+        <Figma {...icon} />
+      </button>
+    </li>
+    <li>
+      <button data-tag="astro">
+        <AstroIcon {...icon} />
+      </button>
+    </li>
+  </ul>
+</div>
+
+<style>
+  #scroller {
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+  }
+
+  #scroller > ul {
+    width: max-content;
+    animation: scroll 20s linear infinite;
+  }
+
+  #scroller:hover > ul {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 1rem));
+    }
+  }
+</style>
+
+<script>
+  // Scroller
+  const scrollerElement = document.getElementById("scroller");
+
+  const addAnimation = () => {
+    scrollerElement.setAttribute("data-animated", "true");
+    const scrollerInner = scrollerElement.querySelector("ul");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", "true");
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  };
+
+  // Check if user don't want animations
+  if (!window.matchMedia("(prefers-reduced-motion: reduce").matches) {
+    addAnimation();
+  }
+</script>

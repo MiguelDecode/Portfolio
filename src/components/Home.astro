@@ -1,7 +1,38 @@
-<section id="home" class="pt-20">
-  <h1>Hey, soy Miguel Decode</h1>
-  <h2>
-    Desarollador Web y estudiante perpetuo. De Galicia, España. Especialido en
-    crear aplicaciones que den soluciones.
-  </h2>
+---
+import { basics } from "@cv";
+---
+
+<section
+  id="home"
+  class="text-slate-900 dark:text-slate-100 flex flex-col-reverse lg:flex-row justify-center lg:justify-around items-center gap-24 min-h-screen px-4"
+>
+  <div class="flex flex-col gap-12 items-start md:w-1/2">
+    <h1 class="text-4xl md:text-6xl">
+      {basics.title}<span class="font-bold text-sky-500">{basics.name}</span>
+    </h1>
+    <h2 class="text-xl lg:text-4xl">
+      <span class="font-bold text-sky-500">{basics.label}</span>{basics.summary}
+    </h2>
+    <div class="flex gap-4">
+      <a
+        href="#"
+        class="font-semibold border-[3px] border-slate-900 dark:border-slate-100 rounded p-2 backdrop-blur transition-colors hover:border-sky-500 hover:text-sky-500"
+        >Descargar CV</a
+      >
+      <a
+        href="mailto:migueldecode@gmail.com"
+        class="font-semibold border-[3px] border-slate-900 dark:border-slate-100 rounded p-2 backdrop-blur transition-colors hover:border-sky-500 hover:text-sky-500"
+        >Contáctame</a
+      >
+    </div>
+  </div>
+  <div
+    class="border-[3px] rounded border-slate-900 dark:border-slate-100 size-80 lg:size-96 rotate-6"
+  >
+    <img
+      class="h-full w-full object-cover grayscale transition-all ease-in-out duration-500 hover:grayscale-0"
+      src="/public/profile.jpg"
+      alt="Miguel Decode Photo"
+    />
+  </div>
 </section>

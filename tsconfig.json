@@ -3,7 +3,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@layout": ["./src/layouts/*"],
       "@cv": ["./src/cv.json"],
+      "@pages": ["./src/pages/*"],
+      "@icons": ["./src/icons/*"]
     }
   }
 }

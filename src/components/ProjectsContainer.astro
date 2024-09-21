@@ -1,10 +1,18 @@
 ---
-import { projects } from "@cv";
 import ProjectCard from "./ProjectCard.astro";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
 ---
 
 <div
   class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-32 mt-12"
 >
-  {projects.map((project) => <ProjectCard {...project} />)}
+  {
+    projects.map((project) => {
+      const { slug, data } = project;
+
+      return <ProjectCard {...data} slug={slug} />;
+    })
+  }
 </div>

@@ -1,0 +1,7 @@
+export {default as Navbar} from './Navbar.astro'
+export {default as Home} from './Home.astro'
+export {default as Experience} from './Experience.astro'
+export {default as About} from './About.astro'
+export {default as Footer} from './Footer.astro'
+export {default as Projects} from './Projects.astro'
+export {default as Contact} from './Contact.astro'

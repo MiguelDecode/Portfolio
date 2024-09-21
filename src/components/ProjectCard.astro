@@ -8,23 +8,16 @@ const icon = {
   height: 32,
 };
 
-const {
-  name,
-  image,
-  startDate,
-  endDate,
-  description,
-  highlights,
-  repo,
-  live,
-  stack,
-} = Astro.props;
+const { name, image, highlights, repo, live, stack, slug } = Astro.props;
 ---
 
 <article
   class="relative flex flex-col gap-4 border-[3px] border-slate-900 bg-slate-100 dark:bg-slate-900 dark:border-slate-100 rounded p-6 text-slate-900 dark:text-slate-100"
 >
-  <div class="relative -mt-24">
+  <a
+    href={`/project/${slug}`}
+    class="relative -mt-24 hover:cursor-pointer"
+  >
     <Image
       src={image}
       alt={name}
@@ -32,9 +25,9 @@ const {
       height="480"
       class="mx-auto rounded"
     />
-  </div>
+  </a>
   <h2 class="font-bold text-3xl">{name}</h2>
-  <p class="line-clamp-6 flex-grow">{description}</p>
+  <p class="line-clamp-6 flex-grow"></p>
   <div class="flex flex-wrap justify-end gap-2">
     {
       stack.map((tech) => (

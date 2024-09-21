@@ -1,0 +1,44 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection, render } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+import Title from "src/components/ui/Title.astro";
+
+export const getStaticPaths = (async () => {
+  const projects = await getCollection("projects");
+
+  return projects.map((project) => ({
+    params: { id: project.slug },
+    props: { project },
+  }));
+}) satisfies GetStaticPaths;
+
+const { project } = Astro.props;
+const { data } = project;
+const { name, image, highlights, repo, live, stack } = data;
+
+const { Content } = await render(project);
+---
+
+<MainLayout title={name}>
+  <main
+    class="max-w-[1280px] mx-auto dark:bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:16px_16px] px-12"
+  >
+    <section
+      id="home"
+      class="text-slate-900 dark:text-slate-100 flex flex-col-reverse lg:flex-row justify-center lg:justify-around items-center gap-24 min-h-screen px-4"
+    >
+      <aside>
+        <img class="rounded w-72 h-auto" src={`${image}`} alt={name} />
+      </aside>
+
+      <div class="max-w-2xl">
+        <Title title={name} />
+
+        <div>
+          <Content />
+        </div>
+      </div>
+    </section>
+  </main>
+</MainLayout>

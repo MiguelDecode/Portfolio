@@ -6,7 +6,7 @@
       "@layout": ["./src/layouts/*"],
       "@cv": ["./src/cv.json"],
       "@pages": ["./src/pages/*"],
-      "@icons": ["./src/icons/*"]
+      "@icons": ["./src/icons/*"],
     }
   }
 }

@@ -1,20 +1,23 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.astro";
-import Home from "../components/Home.astro";
-import About from "../components/About.astro";
-import Projects from "../components/Projects.astro";
-import Contact from "../components/Contact.astro";
-import Experience from "src/components/Experience.astro";
-import Footer from "../components/Footer.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+import {
+  Navbar,
+  Home,
+  About,
+  Projects,
+  Contact,
+  Experience,
+  Footer,
+} from "../components/layout";
 ---
 
-<Layout
+<MainLayout
   title="Portfolio de Miguel Decode - Desarollador web"
   description="Contrata a Miguel Decode para crear tu aplicación web o móvil. Desarollador Web y entusiasta tecnológico. Especializado en crear aplicaciones únicas."
 >
   <main
-    class="max-w-[1280px] mx-auto dark:bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:16px_16px]"
+    class="max-w-[1280px] mx-auto dark:bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:16px_16px] px-12"
   >
     <Navbar />
 
@@ -30,4 +33,4 @@ import Footer from "../components/Footer.astro";
 
     <Footer />
   </main>
-</Layout>
+</MainLayout>

@@ -26,16 +26,33 @@ const { Content } = await render(project);
   >
     <section
       id="home"
-      class="text-slate-900 dark:text-slate-100 flex flex-col-reverse lg:flex-row justify-center lg:justify-around items-center gap-24 min-h-screen px-4"
+      class="text-slate-900 dark:text-slate-100 flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-24 min-h-screen px-4"
     >
-      <aside>
-        <img class="rounded w-72 h-auto" src={`${image}`} alt={name} />
-      </aside>
-
-      <div class="max-w-2xl">
-        <Title title={name} />
-
-        <div class="prose">
+      <div
+        class="grid grid-cols-6 grid-rows-9 gap-4 w-full *:border-[3px] *:border-slate-900 *:rounded"
+      >
+        <div class="col-span-2 row-span-3 overflow-hidden">
+          <img
+            class="lg:max-w-96 w-full"
+            src={`${image}`}
+            alt={name}
+            transition:name={`project-${name}`}
+          />
+        </div>
+        <div class="col-span-2 row-span-3 col-start-1 row-start-4">2</div>
+        <div class="col-span-2 row-span-3 col-start-1 row-start-7">QR CODE</div>
+        <div class="col-span-2 row-span-2 col-start-3 row-start-1">
+          Stack Tecnológico
+        </div>
+        <div
+          class="col-span-2 row-span-5 col-start-3 row-start-3 border-none flex items-center justify-center"
+        >
+          <Title title={name} />
+        </div>
+        <div class="col-span-2 row-span-2 col-start-3 row-start-8">6</div>
+        <div
+          class="col-span-2 row-span-9 col-start-5 row-start-1 bg-slate-100 prose p-6 flex flex-col items-center justify-center"
+        >
           <Content />
         </div>
       </div>

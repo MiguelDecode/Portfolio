@@ -2,8 +2,14 @@
 const { width, height } = Astro.props;
 ---
 
-<svg width={width} height={height} viewBox="0 0 128 128">
-  <g fill="currentcolor"
+<svg
+  class="hover:fill-sky-500"
+  fill="currentcolor"
+  width={width}
+  height={height}
+  viewBox="0 0 128 128"
+>
+  <g 
     ><path
       fill-rule="evenodd"
       clip-rule="evenodd"

@@ -1,6 +1,7 @@
 ---
 // Font supports weights 100-900
 import "@fontsource-variable/onest";
+import { ViewTransitions } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -19,6 +20,7 @@ const { title, description } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
 
   <body class="dark:bg-gray-800 inset-0 h-full w-full bg-gray-100">

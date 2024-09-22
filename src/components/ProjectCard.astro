@@ -24,6 +24,7 @@ const { name, image, highlights, repo, live, stack, slug } = Astro.props;
       width="640"
       height="480"
       class="mx-auto rounded"
+      transition:name={`project-${name}`}
     />
   </a>
   <h2 class="font-bold text-3xl">{name}</h2>

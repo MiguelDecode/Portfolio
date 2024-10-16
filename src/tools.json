@@ -1,0 +1,9 @@
+{
+    "tools": [
+            {
+                "name": "freeCodeCamp",
+                "url": "https://www.freecodecamp.org/learn",
+                "tags": ["javascript", "html", "css", "english"]
+            }
+        ]
+}

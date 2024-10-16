@@ -5,6 +5,7 @@
     "paths": {
       "@layout": ["./src/layouts/*"],
       "@cv": ["./src/cv.json"],
+      "@tools": ["./src/tools.json"],
       "@pages": ["./src/pages/*"],
       "@icons": ["./src/icons/*"],
     }
